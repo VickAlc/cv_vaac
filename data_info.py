@@ -233,3 +233,55 @@ indizadas = [
     }
 ]
 
+
+# Publicaciones en congresos
+congreso = [
+    {
+        'anio': '2017',
+        'titulo': 'Título: *Análisis teórico-experimental de esfuerzos a partir de correlación digital de imágenes*',
+        'autores': 'Echeverría-Ramírez, J., Gamiño-Rivas, N., Alcántar-Camarena, V., Gutiérrez-González, J.',
+        'congreso': 'Congreso: Academia Journals - Celaya',
+        'isbn': 'ISSN:  1946-5351',
+        'enlace': 'https://static1.squarespace.com/static/55564587e4b0d1d3fb1eda6b/t/600b2129e808b413db18ee4d/1611342133902/Memorias+Academia+Journals+Celaya+2017+-+Tomo+09.pdf'
+    },
+    {
+        'anio': '2016',
+        'titulo': 'Título: *Evaluación de los criterios de falla Esfuerzo Máximo y Tsai-Wu para la optimización de un material compuesto con algoritmos genéticos*',
+        'autores': 'Alcántar, V., Zavala, J., Vázquez, M., Saldaña, A.',
+        'congreso': 'Congreso: XXII Congreso internacional de la SOMIM',
+        'isbn': 'ISSN: 2448-5551',
+        'enlace': 'https://www.somim.org.mx/memorias/2016/MemoriasFinales32016.pdf [A2_174]'
+    },
+    {
+        'anio': '2015',
+        'titulo': 'Título: *Herramienta paramétrica para generar modelos con rugosidad empleando el método de elemento finito*',
+        'autores': 'Alcántar, V., Saldaña, A., Ledesma, E., Aguilera, E.',
+        'congreso': 'Congreso: XXI Congreso internacional de la SOMIM',
+        'isbn': 'ISSN: 2448-5551',
+        'enlace': 'https://www.somim.org.mx/memorias/2015/index.html#0 [A3_83]'
+    },
+    {
+        'anio': '2015',
+        'titulo': 'Título: *Análisis teórico, fotoelástico y numérico de probetas con concentrador de esfuerzos sometidas a tracción*',
+        'autores': 'Autores: Moya, F., Pérez, E., Saldaña, A., Alcántar, V., Jurado, J., Vázquez, M.',
+        'congreso': 'Congreso: XXI Congreso internacional de la SOMIM',
+        'isbn': 'ISSN: 2448-5551',
+        'enlace': 'https://www.somim.org.mx/memorias/2015/index.html#0 [A2_89]'
+    },
+    {
+        'anio': '2014',
+        'titulo': 'Título: *Análisis numérico comparativo del comportamiento mecánico del UHMWPE y el cartílago humano*',
+        'autores': 'Autores: Alcántar, V., Saldaña A., Pérez P., Gutiérrez M., Vidal A., Ledesma E., González B.',
+        'congreso': 'Congreso: XX Congreso internacional de la SOMIM',
+        'isbn': 'ISBN: 978-607-96746-3-2',
+        'enlace': 'https://somim.org.mx/siam/librosomim2014/pdfs/A4/A4_245.pdf'
+    },
+    {
+        'anio': '2014',
+        'titulo': 'Título: *Análisis teórico-numérico de esfuerzos generados para bruñido de bola sobre cilindros rotativos*',
+        'autores': 'Autores: Saldaña, A., Aguilera, E., Plascencia, H., Ledesma, E., Alcántar, V.',
+        'congreso': 'Congreso: XX Congreso internacional de la SOMIM',
+        'isbn': 'ISBN: 978-607-96746-4-9',
+        'enlace': 'https://somim.org.mx/siam/librosomim2014/pdfs/A3/A3_248.pdf'
+    }
+]

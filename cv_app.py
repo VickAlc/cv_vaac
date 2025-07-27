@@ -18,6 +18,7 @@ with st.sidebar:
     st.markdown('[Membresías](#membresias)')
     st.markdown('[Patentes](#patentes)')
     st.markdown('[Publicaciones en revistas indizadas](#indizadas)')
+    st.markdown('[Publicaciones en congresos](#congreso)')
 
 
 # Sección inicial
@@ -30,7 +31,7 @@ with col1:
 with col2:
     st.markdown("### Víctor Alfonso Alcántar Camarena")
     st.write("Dr. en Ingeniería Mecánica")
-    st.write("Universidad Politécnica del Bicentenario")
+    st.write("Profesor Titula A")
     st.write("📧 valcantarc@upbicentenario.edu.mx")
 
 st.info(data_info.semblanza)
@@ -144,6 +145,7 @@ for item in data_info.patentes:
     #st.markdown("<br>", unsafe_allow_html=True)
 st.markdown('---')
 
+
 # Publicaciones en revistas indizadas
 st.markdown('<a id="indizadas"></a>', unsafe_allow_html=True)
 st.success('#### Publicaciones en revistas indizadas')
@@ -167,3 +169,19 @@ st.markdown('---')
 
 
 # Publicaciones en congresos
+st.markdown('<a id="congreso"></a>', unsafe_allow_html=True)
+st.success('#### Publicaciones en congresos')
+for item in data_info.congreso:
+    col1, col2 = st.columns([1, 5])
+    with col1:
+        st.markdown(f"**{item['anio']}**")
+    with col2:
+        st.markdown(f"""
+        {item['titulo']}  
+        {item['autores']}  
+        {item['congreso']}  
+        {item['isbn']}  
+        {item['enlace']}   
+        """)
+    #st.markdown("<br>", unsafe_allow_html=True)
+st.markdown('---')
