@@ -18,7 +18,7 @@ with st.sidebar:
     st.markdown('[Membresías](#membresias)')
     st.markdown('[Patentes](#patentes)')
     st.markdown('[Publicaciones en revistas indizadas](#indizadas)')
-    st.markdown('[Publicaciones en congresos](#congreso)')
+    st.markdown('[Publicaciones en congresos y revistas arbitradas](#congreso)')
 
 
 # Sección inicial
@@ -170,7 +170,7 @@ st.markdown('---')
 
 # Publicaciones en congresos
 st.markdown('<a id="congreso"></a>', unsafe_allow_html=True)
-st.success('#### Publicaciones en congresos')
+st.success('#### Publicaciones en congresos y revistas arbitradas')
 for item in data_info.congreso:
     col1, col2 = st.columns([1, 5])
     with col1:
