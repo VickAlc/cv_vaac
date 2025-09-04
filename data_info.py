@@ -145,7 +145,18 @@ patentes = [
 indizadas = [
     {
         'anio': '2025',  
-        'titulo': 'Título: "Review on the integration of high-temperature heat pumps in district heating and cooling networks"',  
+        'titulo': 'Título: "Application of mixture of experts models for the recognition of pests and diseases in maize"',  
+        'autores': 'Autores: Raya-González, L.E., Alcántar-Camarena, V., Cepeda-Negrete, J., Bustos-Gaytán, A., Abraham-Juárez, Ma. R., Saldaña-Robles, N.',  
+        'journal': 'Journal: *Array*',  
+        'volumen': 'Volumen: --',  
+        'paginas': 'Páginas: 100502',  
+        'revista': 'Revista: Elsevier',  
+        'doi': 'DOI: https://doi.org/10.1016/j.array.2025.100502',  
+        'impacto': 'Factor de impacto: 4.5'  
+    },
+    {
+        'anio': '2025',  
+        'titulo': 'Título: "High-precision prototype for garlic apex reorientation based on artificial intelligence models"',  
         'autores': 'Autores: Raya-González, L.E., Alcántar-Camarena, V., Saldaña-Robles, A., Duque-Vázquez, E.F., Tapia-Tinoco, G., Saldaña-Robles, N.',  
         'journal': 'Journal: *Computers and Electronics in Agriculture*',  
         'volumen': 'Volumen: 235',  
