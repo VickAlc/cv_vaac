@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Streamlit CV App",
+      "runtimeExecutable": "streamlit",
+      "runtimeArgs": ["run", "cv_app.py"],
+      "port": 8501
+    }
+  ]
+}
