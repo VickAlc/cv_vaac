@@ -2,9 +2,23 @@ import streamlit as st
 import data_info
 
 st.set_page_config(
-    page_title="Víctor Alcántar",  # Título de la pestaña del navegador
-    layout="centered"  # o "wide" para más espacio
+    page_title="Víctor Alcántar",
+    layout="centered"
 )
+
+st.markdown("""
+<style>
+.badge-impacto {
+    background-color: #0068c9;
+    color: white;
+    padding: 2px 9px;
+    border-radius: 10px;
+    font-size: 0.80em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # --- Barra lateral de navegación ---
 with st.sidebar:
@@ -25,13 +39,11 @@ with st.sidebar:
 st.markdown('<a id="inicio"></a>', unsafe_allow_html=True)
 col1, col2 = st.columns([1, 3])
 with col1:
-    # Muestra la imagen (ajusta el width al tamaño deseado)
     st.image("archivos/foto_cv.png", width=120)
-
 with col2:
     st.markdown("### Víctor Alfonso Alcántar Camarena")
     st.write("Dr. en Ingeniería Mecánica")
-    st.write("Profesor Titula A")
+    st.write("Profesor Titular A")
     st.write("📧 valcantarc@upbicentenario.edu.mx")
 
 st.info(data_info.semblanza)
@@ -44,14 +56,9 @@ st.success('#### Formación académica')
 for item in data_info.formacion:
     col1, col2 = st.columns([1, 5])
     with col1:
-        st.markdown(f"{item['periodo']}")  
+        st.markdown(f"**{item['periodo']}**")
     with col2:
-        st.markdown(f"""
-        {item['institucion']}  
-        {item['grado']}  
-        *Tesis:* {item['tesis']}  
-        """)
-    #st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"**{item['institucion']}**  \n{item['grado']}  \n*Tesis:* {item['tesis']}")
 st.markdown('---')
 
 
@@ -61,13 +68,9 @@ st.success('#### Antecedentes laborales')
 for item in data_info.ant_lab:
     col1, col2 = st.columns([1, 5])
     with col1:
-        st.markdown(f"{item['periodo']}")
+        st.markdown(f"**{item['periodo']}**")
     with col2:
-        st.markdown(f"""
-        {item['institucion']}
-        {item['actividad']}
-        """)
-    #st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"**{item['institucion']}**  \n{item['actividad']}")
 st.markdown('---')
 
 
@@ -77,12 +80,9 @@ st.success('#### Distinciones')
 for item in data_info.distincion:
     col1, col2 = st.columns([1, 5])
     with col1:
-        st.markdown(f"{item['periodo']}")
+        st.markdown(f"**{item['periodo']}**")
     with col2:
-        st.markdown(f"""
-        {item['distincion']}
-        """)
-    #st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"**{item['distincion']}**")
 st.markdown('---')
 
 
@@ -94,20 +94,17 @@ for item in data_info.rec_acad:
     with col1:
         st.markdown(f"**{item['periodo']}**")
     with col2:
-        st.markdown(f"""
-        {item['reconocimiento']}  
-        {item['trabajo']}  
-        {item['institucion']}
-        """)
-    #st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"**{item['reconocimiento']}**  \n*{item['trabajo']}*  \n{item['institucion']}")
 st.markdown('---')
 
 
 # Materias impartidas
 st.markdown('<a id="materias"></a>', unsafe_allow_html=True)
 st.success("#### Materias impartidas")
-for materia in data_info.materias:
-    st.markdown(f"- {materia}")
+col1, col2 = st.columns(2)
+mid = (len(data_info.materias) + 1) // 2
+for i, materia in enumerate(data_info.materias):
+    (col1 if i < mid else col2).markdown(f"- {materia}")
 st.markdown('---')
 
 
@@ -119,11 +116,7 @@ for item in data_info.membresia:
     with col1:
         st.markdown(f"**{item['periodo']}**")
     with col2:
-        st.markdown(f"""
-        {item['comite']}  
-        {item['registro']}  
-        """)
-    #st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"**{item['comite']}**  \n{item['registro']}")
 st.markdown('---')
 
 
@@ -135,14 +128,11 @@ for item in data_info.patentes:
     with col1:
         st.markdown(f"**{item['anio']}**")
     with col2:
-        st.markdown(f"""
-        {item['titulo']}  
-        {item['inventores']}  
-        {item['num_patente']}  
-        {item['pais']}  
-        {item['enlace']}   
-        """)
-    #st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"**{item['titulo']}**")
+        st.markdown(f"*Inventores:* {item['inventores']}")
+        st.markdown(f"No. `{item['num_patente']}` | {item['pais']}")
+        st.markdown(f"[🔗 Ver patente]({item['enlace']})")
+        st.markdown("")
 st.markdown('---')
 
 
@@ -153,18 +143,18 @@ for item in data_info.indizadas:
     col1, col2 = st.columns([1, 5])
     with col1:
         st.markdown(f"**{item['anio']}**")
+        st.markdown(
+            f'<span class="badge-impacto">IF&nbsp;{item["impacto"]}</span>',
+            unsafe_allow_html=True
+        )
     with col2:
-        st.markdown(f"""
-        {item['titulo']}  
-        {item['autores']}  
-        {item['journal']}  
-        {item['volumen']}  
-        {item['paginas']}  
-        {item['revista']}  
-        {item['doi']}  
-        {item['impacto']}  
-        """)
-    #st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"**{item['titulo']}**")
+        st.markdown(f"*{item['autores']}*")
+        st.markdown(
+            f"📰 {item['journal']} | Vol. {item['volumen']} | pp. {item['paginas']} | {item['revista']}"
+        )
+        st.markdown(f"[🔗 DOI]({item['doi']})")
+        st.markdown("")
 st.markdown('---')
 
 
@@ -176,12 +166,9 @@ for item in data_info.congreso:
     with col1:
         st.markdown(f"**{item['anio']}**")
     with col2:
-        st.markdown(f"""
-        {item['titulo']}  
-        {item['autores']}  
-        {item['congreso']}  
-        {item['isbn']}  
-        {item['enlace']}   
-        """)
-    #st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"{item['titulo']}")
+        st.markdown(f"*{item['autores']}*")
+        st.markdown(f"📍 {item['congreso']} | {item['isbn']}")
+        st.markdown(f"[🔗 Ver publicación]({item['enlace']})")
+        st.markdown("")
 st.markdown('---')
