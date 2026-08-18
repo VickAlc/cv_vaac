@@ -82,6 +82,8 @@ rec_acad = [
 materias = [
     "Cálculo diferencial e integral",
     "Álgebra lineal",
+    "Ecuaciones diferenciales",
+    "Cálculo de varias variables",
     "Estática",
     "Taller de Diseño",
     "Mecánica de Sólidos I",
@@ -115,6 +117,30 @@ membresia = [
 # Patentes
 patentes = [
     {
+        'anio': '2026',
+        'titulo': 'Sistema de deshidratación de alimentos utilizando energía solar',
+        'inventores': 'Pérez-Márquez, D.A., Escalera-Rodríguez, H.E., Ramírez-Guzmán, L.L., Alcántar-Camarena, V.A.',
+        'num_patente': '436219',
+        'pais': 'México',
+        'enlace': 'https://drive.google.com/file/d/1IHAhr5SmQa6CPzlOK55P5zu7UoC4Bpuq/view?usp=drive_link'
+    },
+    {
+            'anio': '2026',
+            'titulo': 'Cabina de deshidratación de alimentos con ajuste dinámico de temperatura y monitoreo remoto',
+            'inventores': 'Pérez-Márquez, D.A., Escalera-Rodríguez, H.E., Alcántar-Camarena, V.A.',
+            'num_patente': '434232',
+            'pais': 'México',
+            'enlace': 'https://drive.google.com/file/d/1uxf2ZQG4D1XcGfS_-YA8MAr2U_REuCA-/view?usp=drive_link'
+    },
+    {
+        'anio': '2026',
+        'titulo': 'Sistema de seguimiento solar con autolimpieza para páneles solares',
+        'inventores': 'Escalera-Rodríguez, H.E., Pérez-Márquez, D.A., Ramírez-Guzmán, L.L., Alcántar-Camarena, V.A.',
+        'num_patente': '431500',
+        'pais': 'México',
+        'enlace': 'https://drive.google.com/file/d/1VO3TucUN_kbAHFaR9JpK8W9-P75OG0wU/view?usp=drive_link'
+    },
+    {
         'anio': '2022',
         'titulo': 'Cryogenic compression storage using a hump-reinforced vacuum jacket',
         'inventores': 'Aceves, S., Espinosa-Loza, F., Guillaume, P., Vernon, A. Switzer, Ledesma-Orozco, E., Alcántar-Camarena, V.',
@@ -143,6 +169,28 @@ patentes = [
 
 # Publicaciones en revistas indizadas
 indizadas = [
+    {
+        'anio': '2026',
+        'titulo': 'Specialized stacking ensemble with optimized base models for the automated detection of pests and diseases in maize',
+        'autores': 'Raya-González, L.E., Alcántar-Camarena, V., Ramírez-Vázquez, J.A., Saldaña-Robles, A.L. and Bustos-Gaytán, A., Cepeda-Negrete, J., Saldaña-Robles, Noé',
+        'journal': '*Engineering Research Express*',
+        'volumen': '8',
+        'paginas': '055212',
+        'revista': 'IOP Publishing',
+        'doi': 'https://doi.org/10.1088/2631-8695/ae495f',
+        'impacto': '1.6'
+    },
+    {
+        'anio': '2026',
+        'titulo': 'Artificial intelligence models to predict surface integrity after the burnishing process',
+        'autores': 'Alcántar-Camarena, V., Raya-González, L.E., Capilla-González, G., Pérez-Márquez, D.A., Balvantín-García, A., Saldaña-Robles, A.L.',
+        'journal': '*Multiscale and Multidisciplinary Modeling, Experiments and Design*',
+        'volumen': '9',
+        'paginas': '57',
+        'revista': 'Springer',
+        'doi': 'https://doi.org/10.1007/s41939-025-01128-z',
+        'impacto': '2.0'
+    },
     {
         'anio': '2025',
         'titulo': 'Application of mixture of experts models for the recognition of pests and diseases in maize',
@@ -248,6 +296,22 @@ indizadas = [
 # Publicaciones en congresos y revistas arbitradas
 congreso = [
     {
+        'anio': '2025',
+        'titulo': '*Analysis and prediction of the mass of injection molded parts using factorial models and random forests*',
+        'autores': 'Zavala-Gutiérrez, J., Pérez-Márquez, D.A., Escalera-Rodríguez, H.E., González-Hernández, J.A., Alcántar-Camarena, V.',
+        'congreso': 'Industrial Organization',
+        'isbn': 'ISSN: 2524-2105',
+        'enlace': 'https://www.researchgate.net/publication/399435925_Analysis_and_prediction_of_the_mass_of_injection_molded_parts_using_factorial_models_and_random_forests'
+    },
+    {
+        'anio': '2024',
+        'titulo': '*Detección de plagas y enfermedades de plantas de maíz mediante aprendizaje profundo*',
+        'autores': 'Raya-González, L.E., Saldaña-Robles, N., Alcántar-Camarena, V., Cepeda-Negrete, J., Bustos-Gaytan, A.J., Saldaña-Robles, A.',
+        'congreso': 'XII Congreso Colombiano de Ingeniería Agrícola, Biosistemas y afines',
+        'isbn': 'ISSN: 3073-035X',
+        'enlace': 'https://drive.google.com/file/d/1VfI_D6h3wfxA5bk6NpoosmMzkuSnGWL4/view?usp=drive_link'
+    },
+    {
         'anio': '2024',
         'titulo': '*Análisis de parámetros operativos en el proceso de moldeo por inyección*',
         'autores': 'Valencia-Lona, C.A., Gutiérrez-Rodríguez, A., Zavala-Gutiérrez, J., Alcántar-Camarena, V.',
@@ -301,7 +365,7 @@ congreso = [
         'autores': 'Rangel-Venegas, O.F., Ramírez-Guzmán, L.L., Escalera-Rodríguez, H.E., Coss-Arzola, O., Alcántar-Camarena, V.',
         'congreso': 'Academia Journals - Celaya',
         'isbn': 'ISSN: 1946-5351',
-        'enlace': 'https://static1.squarespace.com/static/55564587e4b0d1d3fb1eda6b/t/619ef3facb3aea559184f697/1637807109205/Tomo+13+-+Art%C3%ADculos+del+Congreso+Academia+Journals+Celaya+2021.pdf'
+        'enlace': 'https://drive.google.com/file/d/1YgxUPwqSR8Z4ypOQeCmmz3sc7iTFrw_r/view?usp=drive_link'
     },
     {
         'anio': '2021',
@@ -325,7 +389,7 @@ congreso = [
         'autores': 'Ramírez-Guzmán, L., Balcazar-Zavala, U., López-Padilla, J., González-Juárez, A., Alcántar-Camarena, V.',
         'congreso': 'Academia Journals - Celaya',
         'isbn': 'ISSN: 1946-5351',
-        'enlace': 'https://static1.squarespace.com/static/55564587e4b0d1d3fb1eda6b/t/5e2b19a3955b89529279b790/1579882949231/Tomo+18+-+Memorias+Congreso+Academia+Journals+Celaya+2019.pdf'
+        'enlace': 'https://drive.google.com/file/d/1b8GGHOZbbr6cSJfmqYYSIqy30HX1xrz9/view?usp=drive_link'
     },
     {
         'anio': '2019',
@@ -333,7 +397,7 @@ congreso = [
         'autores': 'Flores-Medina, R., Gutiérrez-Montañez, C., Pérez-Márquez, D., Zavala-Gutiérrez, J., Alcántar-Camarena, V.',
         'congreso': 'Academia Journals - Celaya',
         'isbn': 'ISSN: 1946-5351',
-        'enlace': 'https://static1.squarespace.com/static/55564587e4b0d1d3fb1eda6b/t/5e29cebdc2509c20c68ee9c7/1579798231170/Tomo+07+-+Memorias+Congreso+Academia+Journals+Celaya+2019.pdf'
+        'enlace': 'https://drive.google.com/file/d/1u_Fp_lx-NU43TmRdLvQFlo2X8VT23C6s/view?usp=drive_link'
     },
     {
         'anio': '2019',
@@ -365,7 +429,7 @@ congreso = [
         'autores': 'Echeverría-Ramírez, J., Gamiño-Rivas, N., Alcántar-Camarena, V., Gutiérrez-González, J.',
         'congreso': 'Academia Journals - Celaya',
         'isbn': 'ISSN: 1946-5351',
-        'enlace': 'https://static1.squarespace.com/static/55564587e4b0d1d3fb1eda6b/t/600b2129e808b413db18ee4d/1611342133902/Memorias+Academia+Journals+Celaya+2017+-+Tomo+09.pdf'
+        'enlace': 'https://drive.google.com/file/d/1ZDTFFlKXV2M-3754YDMAKhd7RsNrhfKv/view?usp=drive_link'
     },
     {
         'anio': '2016',
@@ -373,7 +437,7 @@ congreso = [
         'autores': 'Alcántar, V., Zavala, J., Vázquez, M., Saldaña, A.',
         'congreso': 'XXII Congreso internacional de la SOMIM [A2_174]',
         'isbn': 'ISSN: 2448-5551',
-        'enlace': 'https://www.somim.org.mx/memorias/2016/MemoriasFinales32016.pdf'
+        'enlace': 'https://drive.google.com/file/d/1eqd3_hEawV6ai9lf-TDqzPTo5uf82fEs/view?usp=drive_link'
     },
     {
         'anio': '2015',
@@ -381,7 +445,7 @@ congreso = [
         'autores': 'Alcántar, V., Saldaña, A., Ledesma, E., Aguilera, E.',
         'congreso': 'XXI Congreso internacional de la SOMIM [A3_83]',
         'isbn': 'ISSN: 2448-5551',
-        'enlace': 'https://www.somim.org.mx/memorias/2015/index.html#0'
+        'enlace': 'https://drive.google.com/file/d/1paqzNkAVUKb0CJXZK0nLi_Q7-7iZc8xR/view?usp=drive_link'
     },
     {
         'anio': '2015',
@@ -389,7 +453,7 @@ congreso = [
         'autores': 'Moya, F., Pérez, E., Saldaña, A., Alcántar, V., Jurado, J., Vázquez, M.',
         'congreso': 'XXI Congreso internacional de la SOMIM [A2_89]',
         'isbn': 'ISSN: 2448-5551',
-        'enlace': 'https://www.somim.org.mx/memorias/2015/index.html#0'
+        'enlace': 'https://drive.google.com/file/d/1jq52Jduj5R1baffa92sTM766obinaKr3/view?usp=drive_link'
     },
     {
         'anio': '2014',
